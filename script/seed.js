@@ -42,15 +42,19 @@ async function seed() {
 // Execute the `seed` function
 // `Async` functions always return a promise, so we can use `catch` to handle any errors
 // that might occur inside of `seed`
-seed()
+seed().then(()=>{
+
+  Order.findById(1)
+  .then((order => {
+    console.log(order.dataValues)
+    order.setProducts(1)
+  }))
+
+})
 
 
 
-Order.findById(1)
-.then((order => {
-  console.log(order.dataValues)
-  order.setProducts(1)
-}))
+
 
 
 
