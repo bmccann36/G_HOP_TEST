@@ -16,7 +16,7 @@ const Product = db.define('product', {
 
 
 
-// Product.create({name: 'pogo', category: 'toy'})
+
 // User.create({email: 'murphy@email.com', password: '123'})
 
 
