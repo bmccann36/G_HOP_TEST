@@ -9,7 +9,7 @@ import Routes from './routes'
 import './socket'
 
 ReactDOM.render(
-  <Provider store={store}>
+   <Provider store={store}>
     <Routes />
   </Provider>,
   document.getElementById('app')

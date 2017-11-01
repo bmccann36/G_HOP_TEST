@@ -55,3 +55,10 @@ const setSaltAndPassword = user => {
 
 User.beforeCreate(setSaltAndPassword)
 User.beforeUpdate(setSaltAndPassword)
+
+
+
+// User.create({email: 'cody@email.com', password: '123'})
+// User.create({email: 'murphy@email.com', password: '123'})
+
+
